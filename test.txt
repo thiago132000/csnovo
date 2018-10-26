@@ -1,0 +1,6 @@
+testar 
+
+foreach($myArray as $key => $subarray) {
+      $myArray[$key]['interesse'] = '1';
+      // ...
+}

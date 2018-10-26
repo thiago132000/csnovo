@@ -1,0 +1,36 @@
+//cria o package json padrão para facilitar
+
+npm init -y
+
+//instalar o sass de maneira global, para usar na maquina inteira - instalar so uma vez
+
+npm install node-sass -g
+
+//verifica se o sass esta instalado
+
+node-sass -v
+
+//instalar dependencia do bootstrap, entra no site do bootstrap e pega - --save ele salva como dependencia no package.json
+
+npm install bootstrap --save
+
+// jquery
+
+npm install jquery --save
+
+//popper / usar o popper da pasta UMD - dentro da pasta do popper
+
+npm i popper.js --save
+
+// criar um arquivo dentro de css com o nome style.scss do sass... e transformar esse arquivo em css no terminal, executando da pasta raiz
+
+node-sass css/style.scss css/style.css
+
+// criar o arquivo css compressed style.min.css --watch deixa ligado para cada alteração feita nao ter que aplicar o comando
+
+node-sass --watch css/style.scss css/style.min.css --output-style compressed
+
+// comando para rodar o codigo criado no package json
+//exemplo "sass-min"
+
+npm run sass-min
